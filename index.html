@@ -11,6 +11,12 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="container mt-5 w-50">
@@ -22,7 +28,12 @@
         onkeyup="event.key === 'Enter' && addNewTodoItem(event)"
         placeholder="Add TODO item"
       />
-      <ul id="todo-container" class="container"></ul>
+      <ul id="todo-container" class="container">
+        <li class="row mb-2 border d-flex align-middle">
+          <p class="col-11 border m-0">sd</p>
+          <button class="btn btn-outline-danger btn-md col-1">X</button>
+        </li>
+      </ul>
     </div>
     <script src="./index.js"></script>
   </body>
