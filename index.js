@@ -1,4 +1,4 @@
-const todoContainer = document.querySelector('.todo-container');
+const todoContainer = document.querySelector('#todo-container');
 
 function createTodoElement(text) {
   const todoItemWrapper = document.createElement('li');
