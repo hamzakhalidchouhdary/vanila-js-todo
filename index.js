@@ -5,7 +5,7 @@ function createTodoElement(text) {
   const todoRemoveBtn = document.createElement('button');
   todoRemoveBtn.innerText = 'Delete';
   todoRemoveBtn.classList.add('btn','btn-danger', 'btn-sm', 'col');
-  todoItemWrapper.classList.add('row')
+  todoItemWrapper.classList.add('row', 'mb-2')
   todoItemWrapper.innerHTML = `<p class='col'>${text}</p>`;
   todoItemWrapper.appendChild(todoRemoveBtn);
   return todoItemWrapper
