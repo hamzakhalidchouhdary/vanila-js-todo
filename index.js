@@ -3,10 +3,13 @@ const todoContainer = document.querySelector('#todo-container');
 function createTodoElement(text) {
   const todoItemWrapper = document.createElement('li');
   const todoRemoveBtn = document.createElement('button');
-  todoRemoveBtn.innerText = 'Delete';
-  todoRemoveBtn.classList.add('btn','btn-danger', 'btn-sm', 'col');
-  todoItemWrapper.classList.add('row', 'mb-2')
-  todoItemWrapper.innerHTML = `<p class='col'>${text}</p>`;
+  const todoTextEle = document.createElement('p');
+  todoRemoveBtn.innerText = 'X';
+  todoRemoveBtn.classList.add('btn','btn-outline-danger', 'btn-md', 'col-1');
+  todoItemWrapper.classList.add('row', 'py-3', 'border-top', 'border-bottom', 'border-light-subtle');
+  todoTextEle.classList.add('col-11', 'm-0');
+  todoTextEle.innerText = text;
+  todoItemWrapper.appendChild(todoTextEle);
   todoItemWrapper.appendChild(todoRemoveBtn);
   return todoItemWrapper
 }
