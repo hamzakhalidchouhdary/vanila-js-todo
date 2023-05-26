@@ -1,6 +1,7 @@
 const todoContainer = document.querySelector('#todo-container');
 
 function createTodoElement(text) {
+  if (!text) return;
   const todoItemWrapper = document.createElement('li');
   const todoRemoveBtn = document.createElement('button');
   const todoTextEle = document.createElement('p');
